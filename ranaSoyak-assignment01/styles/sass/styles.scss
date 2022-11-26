@@ -1,8 +1,34 @@
+// Variables
+    // Font Color
+$primaryFontColor: #FCFCFC;
+$secondaryFontColor: #152D20;
+    // Font Family
+$mainFontFam: 'Cormorant Garamond', serif;
+$secondFontFam: 'Fredericka the Great',cursive;
+$thirdFontFam: 'Roboto', sans-serif;
+    // Bakcground Color
+$mainBackgroundColor: #152D20;
+$secondBackgroundColor: #C3D3CB;
+$thirdBackgroundColor: #FCFCFC;
+
+
+
+
+
+
+// General Styling
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: green;
 }
 
-h1 {
-    font-size: 600px;
-    color: blue;
+
+// Navigation Styling
+.inSiteNavigation {
+
 }
