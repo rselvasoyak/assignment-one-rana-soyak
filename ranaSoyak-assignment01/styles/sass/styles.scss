@@ -3,17 +3,16 @@
 $primaryFontColor: #FCFCFC;
 $secondaryFontColor: #152D20;
     // Font Family
-$mainFontFam: 'Cormorant Garamond', serif;
-$secondFontFam: 'Fredericka the Great',cursive;
+$mainFontFam: 'Fredericka the Great',cursive;
+$secondFontFam:'Cormorant Garamond', serif; 
 $thirdFontFam: 'Roboto', sans-serif;
+    // Font Size
+$h1Size: 120px;
+
     // Bakcground Color
 $mainBackgroundColor: #152D20;
 $secondBackgroundColor: #C3D3CB;
 $thirdBackgroundColor: #FCFCFC;
-
-
-
-
 
 
 // General Styling
@@ -24,11 +23,76 @@ html {
 }
 
 body {
-    background-color: green;
+    // background-color: green;
 }
 
+.wrapper {
+    max-width: 1800px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
 
 // Navigation Styling
-.inSiteNavigation {
+header {
+    background-image: url(../styles/animal-land-assets/image-1.jpg);
+    height: 60vh;
+    width: auto; 
+    background-size: cover;
+    // background-repeat: no-repeat;
+    position: relative;
+        .inSiteNavigation {
+            ul{
+                display: flex;
+                width: 100%;
+                li{
+                    text-transform: uppercase;
+                    padding: 1%;
+                    a{
+                        text-decoration: none;
+                        font-family: $secondFontFam;
+                        font-size: 22px;
+                    }
+                }
+            }
+        
+            .hamburgerMenu {
+                visibility: hidden;
+            }
+        }
+        
+        .h1{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: 30%;
+            top: -5%;
+            h1 {
+                text-transform: capitalize;
+                font-family: $mainFontFam;
+                color: $primaryFontColor;
+                font-size: $h1Size;
+            }
+        }
+        
+        .inSiteNavigation, .socialMediaNavigation {
+            li{
+                list-style-type: none;
+            }
+        
+            a {
+                color: $primaryFontColor;
+            }
+        }
 
+        .socialMediaNavigation {
+            position: absolute;
+                bottom: 15px;
+                right: 40px;
+            font-size: large;
+                li{
+                    padding: 20%;
+                }
+        }
 }
+

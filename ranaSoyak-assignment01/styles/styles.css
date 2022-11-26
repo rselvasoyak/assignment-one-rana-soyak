@@ -4,6 +4,65 @@ html {
   padding: 0;
 }
 
-body {
-  background-color: green;
+.wrapper {
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  background-image: url(../styles/animal-land-assets/image-1.jpg);
+  height: 60vh;
+  width: auto;
+  background-size: cover;
+  position: relative;
+}
+header .inSiteNavigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+header .inSiteNavigation ul li {
+  text-transform: uppercase;
+  padding: 1%;
+}
+header .inSiteNavigation ul li a {
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+}
+header .inSiteNavigation .hamburgerMenu {
+  visibility: hidden;
+}
+header .h1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 30%;
+  top: -5%;
+}
+header .h1 h1 {
+  text-transform: capitalize;
+  font-family: "Fredericka the Great", cursive;
+  color: #FCFCFC;
+  font-size: 120px;
+}
+header .inSiteNavigation li, header .socialMediaNavigation li {
+  list-style-type: none;
+}
+header .inSiteNavigation a, header .socialMediaNavigation a {
+  color: #FCFCFC;
+}
+header .socialMediaNavigation {
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  font-size: large;
+}
+header .socialMediaNavigation li {
+  padding: 20%;
 }
