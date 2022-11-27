@@ -19,12 +19,13 @@ body {
 }
 
 header {
-  background-image: url(../styles/animal-land-assets/image-1.jpg);
-  height: 70vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center bottom;
   position: relative;
+}
+header .tigerImage {
+  width: 100%;
+}
+header .inSiteNavigation {
+  position: absolute;
 }
 header .inSiteNavigation ul {
   display: -webkit-box;
@@ -44,14 +45,14 @@ header .inSiteNavigation ul li a {
 header .inSiteNavigation .hamburgerMenu {
   visibility: hidden;
 }
-header .h1 {
+header .h1Container {
   width: 150px;
   height: 150px;
   position: absolute;
   right: 30%;
   top: -5%;
 }
-header .h1 h1 {
+header .h1Container h1 {
   text-transform: capitalize;
   font-family: "Fredericka the Great", cursive;
   color: #FCFCFC;

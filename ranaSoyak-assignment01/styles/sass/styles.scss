@@ -38,13 +38,18 @@ body {
 
 // Navigation Styling
 header {
-    background-image: url(../styles/animal-land-assets/image-1.jpg);
-    height: 70vh;
-    width: 100vw; 
-    background-size: cover;
-    background-position: center bottom;
+    // the background image size + header size was assumed based on max-1500px screen.
+    // background-image: url(../styles/animal-land-assets/image-1.jpg);
+    // height: 70vh;
+    // width: 100vw; 
+    // background-size: cover;
+    // background-position: center bottom;
     position: relative;
+    .tigerImage{
+        width: 100%;
+    }
         .inSiteNavigation {
+            position: absolute;
             ul{
                 display: flex;
                 width: 100%;
@@ -65,7 +70,7 @@ header {
             
         }
         
-          .h1{
+          .h1Container{
             width: 150px;
             height: 150px;
             position: absolute;
