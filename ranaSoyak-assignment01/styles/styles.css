@@ -20,6 +20,8 @@ body {
 
 header {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 header .tigerImage {
   width: 100%;
@@ -50,7 +52,7 @@ header .h1Container {
   height: 150px;
   position: absolute;
   right: 30%;
-  top: -5%;
+  top: 5%;
 }
 header .h1Container h1 {
   text-transform: capitalize;
@@ -76,15 +78,8 @@ header .socialMediaNavigation li {
 
 .suzieStory {
   padding: 75px 0;
+  margin: 0;
   background-color: #152D20;
-}
-.suzieStory .wrapper {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .suzieStory .suzieImg {
   width: 30%;
@@ -97,15 +92,18 @@ header .socialMediaNavigation li {
 .suzieStory .suzieContent {
   width: 70%;
   min-width: 400px;
+  padding-left: 2%;
 }
 .suzieStory .suzieContent h2 {
   font-size: 5.1rem;
   font-family: "Fredericka the Great", cursive;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .suzieStory .suzieContent p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  margin-top: 0;
 }
 .suzieStory .suzieContent button {
   text-transform: uppercase;
