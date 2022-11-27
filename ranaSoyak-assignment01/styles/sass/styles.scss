@@ -9,6 +9,7 @@ $thirdFontFam: 'Roboto', sans-serif;
     // Font Size
 $h1Size: 12rem;
 $h2Size: 5.1rem;
+$h2Size2: 4.9rem;
 $paragraphSize: 2rem;
 
     // Bakcground Color
@@ -108,11 +109,7 @@ header {
     padding: 75px 0;
     margin: 0;
     background-color: $mainBackgroundColor;
-    max-height: 550px;
-          .wrapper{
-            // justify-content: space-between;
-            // align-items: center;
-        }
+    max-height: 450px;
         
         .suzieImg{
             width: 30%;
@@ -125,6 +122,7 @@ header {
 
         .suzieContent {
             width: 70%;
+            max-height: 400px;
             min-width: 400px;
             padding-left: 2%;
             h2 {
@@ -151,27 +149,35 @@ header {
 
 .ourFriendsContainer {
     background-color: $secondBackgroundColor;
-    height: 10%;
+    height: 60rem;
         .ourFriendsContentContainer{
-            height: 80%;
             width:90%;
-            h2 {
-                color: red;
-                text-align: center;
-            }
-            .ourFriendsImages {
-                width: 80%;
+            flex-direction: column;
+            .ourFriendsh2Container {
                 display: flex;
-                flex-basis: 32%;
-                height: 80%;
-                .animalImagesContainer {
-                    // display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                h2 {
+                    color: $secondaryFontColor;                
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: $mainFontFam;
+                    font-size: $h2Size2;
+                }
+            }
+           
+            .ourFriendsImages {
+                min-width: 1300px;
+                max-width: 1500px;                
+                display: flex;
+                justify-content: space-evenly;
+                // height: 80%;
+                .animalImagesContainers {
                     object-fit: cover;
-                    width: 30%;
-                    height: 30%;
-                    min-height: 350px;
-                    a{
-                        width: 100%;
+                    height: 40rem;
+                    min-height: 100px;
+                    img{
+                        height: 100%;
                     }
                 }
             }

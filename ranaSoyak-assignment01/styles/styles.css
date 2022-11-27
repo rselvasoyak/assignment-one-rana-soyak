@@ -80,7 +80,7 @@ header .socialMediaNavigation li {
   padding: 75px 0;
   margin: 0;
   background-color: #152D20;
-  max-height: 550px;
+  max-height: 450px;
 }
 .suzieStory .suzieImg {
   width: 30%;
@@ -92,6 +92,7 @@ header .socialMediaNavigation li {
 }
 .suzieStory .suzieContent {
   width: 70%;
+  max-height: 400px;
   min-width: 400px;
   padding-left: 2%;
 }
@@ -116,32 +117,48 @@ header .socialMediaNavigation li {
 
 .ourFriendsContainer {
   background-color: #C3D3CB;
-  height: 10%;
+  height: 60rem;
 }
 .ourFriendsContainer .ourFriendsContentContainer {
-  height: 80%;
   width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.ourFriendsContainer .ourFriendsContentContainer h2 {
-  color: red;
-  text-align: center;
-}
-.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages {
-  width: 80%;
+.ourFriendsContainer .ourFriendsContentContainer .ourFriendsh2Container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
-  height: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages .animalImagesContainer {
+.ourFriendsContainer .ourFriendsContentContainer .ourFriendsh2Container h2 {
+  color: #152D20;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 4.9rem;
+}
+.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages {
+  min-width: 1300px;
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages .animalImagesContainers {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 30%;
-  height: 30%;
-  min-height: 350px;
+  height: 40rem;
+  min-height: 100px;
 }
-.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages .animalImagesContainer a {
-  width: 100%;
+.ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages .animalImagesContainers img {
+  height: 100%;
 }
