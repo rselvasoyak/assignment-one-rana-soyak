@@ -11,6 +11,7 @@ $h1Size: 12rem;
 $h2Size: 5.1rem;
 $h2Size2: 4.9rem;
 $paragraphSize: 2rem;
+$linkSize: 2.2rem;
 
     // Bakcground Color
 $mainBackgroundColor: #152D20;
@@ -167,7 +168,7 @@ header {
             }
            
             .ourFriendsImages {
-                min-width: 1300px;
+                min-width: 1200px;
                 max-width: 1500px;                
                 display: flex;
                 justify-content: space-evenly;
@@ -182,4 +183,35 @@ header {
                 }
             }
         }
+}
+
+.middleLinkContainer {
+    height: 15rem;
+    background-color: $mainBackgroundColor;
+    .wrapper {
+        padding-top: 5px;
+        min-width: 1200px;
+        height: 90%;
+        justify-content: space-evenly;
+        align-items: center;  
+            .linkBox {
+                height: 100%;
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                    .animalSpotlight {
+                        padding-left: 2%;
+                        text-align: center;
+                    }
+                    a{
+                        font-family: $secondFontFam;
+                        font-size: $linkSize;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $primaryFontColor;
+                    }
+          }
+    }
 }

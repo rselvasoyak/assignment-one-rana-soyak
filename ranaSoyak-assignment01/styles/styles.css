@@ -144,7 +144,7 @@ header .socialMediaNavigation li {
   font-size: 4.9rem;
 }
 .ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages {
-  min-width: 1300px;
+  min-width: 1200px;
   max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,4 +161,48 @@ header .socialMediaNavigation li {
 }
 .ourFriendsContainer .ourFriendsContentContainer .ourFriendsImages .animalImagesContainers img {
   height: 100%;
+}
+
+.middleLinkContainer {
+  height: 15rem;
+  background-color: #152D20;
+}
+.middleLinkContainer .wrapper {
+  padding-top: 5px;
+  min-width: 1200px;
+  height: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.middleLinkContainer .wrapper .linkBox {
+  height: 100%;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.middleLinkContainer .wrapper .linkBox .animalSpotlight {
+  padding-left: 2%;
+  text-align: center;
+}
+.middleLinkContainer .wrapper .linkBox a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FCFCFC;
 }
