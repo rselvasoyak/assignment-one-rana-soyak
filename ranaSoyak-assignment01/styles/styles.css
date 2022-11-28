@@ -445,6 +445,7 @@ header .socialMediaNavigation li {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 120rem;
+  background-color: rgb(45, 44, 44);
 }
 .blogContainer .blogTopRow {
   display: -webkit-box;
