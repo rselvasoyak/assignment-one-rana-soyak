@@ -235,6 +235,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #152D20;
 }
 
 .wrapper {
@@ -308,8 +309,8 @@ header .socialMediaNavigation li {
   padding: 75px 0;
   margin: 0;
   background-color: #152D20;
-  max-height: 450px;
-  height: 60rem;
+  max-height: 600px;
+  height: 70rem;
 }
 .suzieStory .suzieImg {
   width: 30%;
@@ -461,6 +462,30 @@ header .socialMediaNavigation li {
   width: 100%;
   height: 100%;
 }
+.blogContainer .blogTopRow .zebraLinkBox {
+  padding: 10vw;
+}
+.blogContainer .blogTopRow .zebraLinkBox h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-top: 0;
+  color: #C3D3CB;
+}
+.blogContainer .blogTopRow .zebraLinkBox p {
+  font-size: 2rem;
+  color: #C3D3CB;
+}
+.blogContainer .blogTopRow .zebraLinkBox button {
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  background-color: #152D20;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border: #152D20;
+  color: #FCFCFC;
+}
 .blogContainer .blogBottomRow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,18 +500,93 @@ header .socialMediaNavigation li {
   width: 50%;
   min-width: 500px;
 }
+.blogContainer .blogBottomRow .bondContainer h3, .blogContainer .blogBottomRow .catAndHumanHandImage h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-top: 0;
+  color: #C3D3CB;
+}
 .blogContainer .blogBottomRow .bondContainer img, .blogContainer .blogBottomRow .catAndHumanHandImage img {
   width: 100%;
   height: 100%;
 }
+.blogContainer .blogBottomRow .bondContainer p, .blogContainer .blogBottomRow .catAndHumanHandImage p {
+  font-size: 2rem;
+  color: #C3D3CB;
+}
+.blogContainer .blogBottomRow .bondContainer button, .blogContainer .blogBottomRow .catAndHumanHandImage button {
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  background-color: #152D20;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border: #152D20;
+  color: #FCFCFC;
+}
+.blogContainer .blogBottomRow .bondContainer {
+  padding: 10vw;
+}
 
 .bottomInformationContainer {
+  height: 15vh;
   background-color: red;
+  width: 100%;
 }
 .bottomInformationContainer .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.bottomNavigation, .signUpSheet, .contactInformation {
+  width: 30%;
+  height: 100%;
+}
+
+.bottomNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bottomNavigation nav {
+  height: 100%;
+}
+.bottomNavigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bottomNavigation nav li {
+  list-style-type: none;
+}
+.bottomNavigation nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.signUpSheet h4 {
+  text-transform: uppercase;
+}
+.signUpSheet form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {

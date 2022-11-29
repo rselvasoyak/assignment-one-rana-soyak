@@ -1,6 +1,10 @@
 @use 'setup';
 
 
+// The sizing and styling of the page was created based on a screen size of max 1800px;
+
+
+
 // Variables
     // Font Color
 $primaryFontColor: #FCFCFC;
@@ -13,8 +17,10 @@ $thirdFontFam: 'Roboto', sans-serif;
 $h1Size: 12rem;
 $h2Size: 5.1rem;
 $h2Size2: 4.9rem;
+$h3Size: 3.5rem;
 $paragraphSize: 2rem;
 $linkSize: 2.2rem;
+$buttonSize:2.9rem;
 
     // Bakcground Color
 $mainBackgroundColor: #152D20;
@@ -32,6 +38,7 @@ html {
 
 body {
     margin: 0;
+    background-color: $mainBackgroundColor;
 }
 
 .wrapper {
@@ -43,7 +50,6 @@ body {
 
 // Navigation Styling
 header {
-    // the background image size + header size was assumed based on max-1500px screen.
     position: relative;
     margin: 0;
     padding: 0;
@@ -113,8 +119,8 @@ header {
     padding: 75px 0;
     margin: 0;
     background-color: $mainBackgroundColor;
-    max-height: 450px;
-    height: 60rem; 
+    max-height: 600px;
+    height: 70rem; 
         .suzieImg{
             width: 30%;
             min-width: 400px;
@@ -232,15 +238,34 @@ header {
             .zebraImage, .zebraLinkBox {
                 width: 50%;
                 min-width: 500px;
-                // display: flex;
-                // flex-direction: column;
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
-            .zebraLinkbox {
-                
+            .zebraLinkBox {
+                padding: 10vw;
+                h3{
+                    text-transform: uppercase;
+                    font-size: $h3Size;
+                    margin-top: 0;
+                    color: $secondBackgroundColor;
+                }
+                p{
+                    font-size: $paragraphSize;
+                    color: $secondBackgroundColor;
+                }
+                button {
+                    text-transform: uppercase;
+                    font-size: $buttonSize;
+                    background-color: $mainBackgroundColor;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border: $secondaryFontColor;
+                    color: $primaryFontColor;
+                }
             }
     }
     .blogBottomRow {
@@ -250,12 +275,34 @@ header {
             .bondContainer, .catAndHumanHandImage {
                 width: 50%;
                 min-width: 500px;
-                // display: flex;
-                // flex-direction: column;
-                img {
+                h3{
+                    text-transform: uppercase;
+                    font-size: $h3Size;
+                    margin-top: 0;
+                    color: $secondBackgroundColor;
+                }
+                 img {
                     width: 100%;
                     height: 100%;
                 }
+                p{
+                    font-size: $paragraphSize;
+                    color: $secondBackgroundColor;
+                }
+                button {
+                    text-transform: uppercase;
+                    font-size: $buttonSize;
+                    background-color: $mainBackgroundColor;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border: $secondaryFontColor;
+                    color: $primaryFontColor;
+                }
+            }
+            .bondContainer {
+                padding: 10vw;
             }
         }
     }
@@ -263,12 +310,51 @@ header {
 
 
 .bottomInformationContainer {
+    height: 15vh;
     background-color: red;
+    width: 100%;
         .wrapper {
+            align-items: center;
             justify-content: space-between;
+            height: 100%;
+            flex-basis: 32%;
         }
+        
 }
 
+.bottomNavigation, .signUpSheet, .contactInformation {
+    width: 30%;
+    height: 100%;
+}
+.bottomNavigation {
+    display: flex;
+              nav{
+                height: 100%;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                li{
+                    list-style-type: none;
+                }
+
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+.signUpSheet {
+    h4{
+        text-transform: uppercase;
+    }
+    form {
+        display: flex;
+        // flex-direction: column;
+    }
+}
 footer { 
     background-color: black;
     display: flex;
@@ -281,6 +367,4 @@ footer {
         font-weight: 600;
         font-size: $paragraphSize;
     }
-   
-   
 }
