@@ -321,23 +321,35 @@ header .socialMediaNavigation li {
   height: 100%;
 }
 .suzieStory .suzieContent {
-  width: 70%;
+  width: 65%;
   max-height: 400px;
   min-width: 400px;
   padding-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .suzieStory .suzieContent h2 {
   font-size: 5.1rem;
   font-family: "Fredericka the Great", cursive;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
 }
 .suzieStory .suzieContent p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  margin-top: 0;
+  margin: 0;
 }
 .suzieStory .suzieContent button {
+  width: 20%;
+  min-width: 175px;
   text-transform: uppercase;
   padding-right: 30px;
   padding-left: 30px;
@@ -530,8 +542,7 @@ header .socialMediaNavigation li {
 }
 
 .bottomInformationContainer {
-  height: 15vh;
-  background-color: red;
+  height: 25vh;
   width: 100%;
 }
 .bottomInformationContainer .wrapper {
@@ -544,11 +555,14 @@ header .socialMediaNavigation li {
   height: 100%;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
-.bottomNavigation, .signUpSheet, .contactInformation {
+.bottomNavigation, .contactInformation {
   width: 30%;
   height: 100%;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .bottomNavigation {
@@ -558,6 +572,9 @@ header .socialMediaNavigation li {
 }
 .bottomNavigation nav {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .bottomNavigation nav ul {
   display: -webkit-box;
@@ -567,9 +584,9 @@ header .socialMediaNavigation li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .bottomNavigation nav li {
   list-style-type: none;
@@ -578,15 +595,89 @@ header .socialMediaNavigation li {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  color: #FCFCFC;
+  font-size: 2rem;
 }
 
-.signUpSheet h4 {
-  text-transform: uppercase;
-}
-.signUpSheet form {
+.signUpSheet {
+  width: 40%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2%;
+  font-family: "Cormorant Garamond", serif;
+}
+.signUpSheet h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1%;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.signUpSheet p {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 2rem;
+}
+.signUpSheet form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.signUpSheet form input {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  height: 35px;
+}
+.signUpSheet form button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.contactInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.contactInformation h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+.contactInformation .info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 4%;
 }
 
 footer {
@@ -605,4 +696,43 @@ footer p {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 2rem;
+}
+
+@media (max-width: 1400px) {
+  header h1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20%;
+    top: -50%;
+  }
+}
+@media (max-width: 1100px) {
+  header h1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20%;
+    top: -50%;
+  }
+}
+@media (max-width: 900px) {
+  header h1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 5%;
+    top: -5%;
+  }
+  header .inSiteNavigation, header .socialMediaNavigation {
+    visibility: hidden;
+  }
+  header .hamburgerMenu {
+    visibility: visible;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    z-index: 2;
+    color: #FCFCFC;
+  }
 }

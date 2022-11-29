@@ -131,23 +131,28 @@ header {
         }
 
         .suzieContent {
-            width: 70%;
+            width: 65%;
             max-height: 400px;
             min-width: 400px;
             padding-left: 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             h2 {
                 font-size: $h2Size;
                 font-family: $mainFontFam;
                 text-transform: uppercase;
-                margin-top: 0;
+                margin:0;
             }
             p{
                 font-family: $thirdFontFam;
                 font-size: $paragraphSize;
-                margin-top: 0;
+                margin:0;
             }
 
             button {
+                width: 20%;
+                min-width: 175px;
                 text-transform: uppercase;
                 padding-right: 30px;
                 padding-left: 30px;
@@ -196,6 +201,7 @@ header {
         }
 }
 
+// Section4 - Middle Link Container 
 .middleLinkContainer {
     height: 15rem;
     background-color: $mainBackgroundColor;
@@ -227,6 +233,7 @@ header {
     }
 }
 
+// Section 5- Blog Container 
 .blogContainer {
     display: flex;
     flex-direction: column;
@@ -308,32 +315,36 @@ header {
     }
 
 
-
+//Section 6 - Bottom Information Centre Section
 .bottomInformationContainer {
-    height: 15vh;
-    background-color: red;
+    height: 25vh;
     width: 100%;
         .wrapper {
             align-items: center;
             justify-content: space-between;
             height: 100%;
             flex-basis: 32%;
+            margin-top: 1%;
+            margin-bottom: 3%;
         }
         
 }
 
-.bottomNavigation, .signUpSheet, .contactInformation {
+.bottomNavigation, .contactInformation {
     width: 30%;
     height: 100%;
+    font-family: $secondFontFam ;
 }
 .bottomNavigation {
     display: flex;
               nav{
                 height: 100%;
+                display: flex;
+                
                 ul{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                 }
                 li{
                     list-style-type: none;
@@ -343,18 +354,68 @@ header {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: 600;
+                    color: $primaryFontColor;
+                    font-size: $paragraphSize;
                 }
             }
         }
 .signUpSheet {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2%;
+    font-family: $secondFontFam;
     h4{
         text-transform: uppercase;
+        text-align: center;
+        margin: 1%;
+        font-size: $linkSize;
+        font-weight: 600;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 3%;
+        font-size: $paragraphSize;
+
     }
     form {
+        width: 100%;
         display: flex;
-        // flex-direction: column;
+        justify-content: center;
+        input{
+            flex-grow: 3;
+            height: 35px;
+        }
+        button {
+            flex-grow: 1;
+        }
     }
 }
+
+.contactInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    h4{
+        margin: 0;
+        text-transform: uppercase;
+        font-size: $linkSize;
+    }
+    .info{
+        p{
+            display: flex;
+            justify-content: flex-end;
+            font-size: $paragraphSize;
+            margin: 0;
+            padding-top: 4%;
+        }
+    }
+}
+
+// Section 7- Footer
 footer { 
     background-color: black;
     display: flex;
@@ -366,5 +427,56 @@ footer {
         font-family: $thirdFontFam;
         font-weight: 600;
         font-size: $paragraphSize;
+    }
+}
+
+
+// Media Queries 
+@media (max-width: 1400px) {
+    header {
+        h1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 20%;
+            top: -50%;
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    header {
+        h1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 20%;
+            top: -50%;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    header {
+        h1{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 5%;
+            top: -5%;
+        }
+        .inSiteNavigation, .socialMediaNavigation{
+            visibility: hidden;
+        }
+        
+        .hamburgerMenu{
+            visibility: visible ;
+            position: absolute;
+                right: 5%;
+                top: 20%;
+            z-index: 2;
+            color: $primaryFontColor;
+           
+        }
     }
 }
